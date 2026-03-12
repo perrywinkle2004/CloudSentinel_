@@ -1,0 +1,27 @@
+{
+  "provider": "aws",
+  "service": "iam",
+  "policy_name": "WeakAdminPolicy",
+  "policy_document": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "*",
+        "Resource": "*"
+      }
+    ]
+  },
+  "mfa_enabled": false,
+  "password_policy": {
+    "minimum_length": 6,
+    "require_uppercase": false,
+    "require_lowercase": false,
+    "require_numbers": false,
+    "require_symbols": false,
+    "max_password_age": 0,
+    "password_reuse_prevention": 0
+  },
+  "root_account_mfa": false,
+  "access_keys_rotated": false
+}

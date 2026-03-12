@@ -1,0 +1,29 @@
+{
+  "provider": "aws",
+  "service": "s3",
+  "bucket_name": "my-public-data-bucket",
+  "region": "us-east-1",
+  "acl": "public-read-write",
+  "block_public_acls": false,
+  "block_public_policy": false,
+  "ignore_public_acls": false,
+  "restrict_public_buckets": false,
+  "versioning": false,
+  "encryption": {
+    "enabled": false
+  },
+  "logging": {
+    "enabled": false
+  },
+  "policy": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "s3:*",
+        "Resource": "arn:aws:s3:::my-public-data-bucket/*"
+      }
+    ]
+  }
+}

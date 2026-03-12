@@ -1,0 +1,33 @@
+{
+  "provider": "azure",
+  "service": "storage",
+  "account_name": "mystorageaccount",
+  "resource_group": "my-rg",
+  "location": "eastus",
+  "allow_blob_public_access": true,
+  "minimum_tls_version": "TLS1_0",
+  "https_only": false,
+  "encryption": {
+    "services": {
+      "blob": {
+        "enabled": false
+      }
+    }
+  },
+  "network_rules": {
+    "default_action": "Allow",
+    "bypass": ["None"],
+    "ip_rules": [],
+    "virtual_network_rules": []
+  },
+  "soft_delete": {
+    "enabled": false
+  },
+  "logging": {
+    "blob": {
+      "read": false,
+      "write": false,
+      "delete": false
+    }
+  }
+}
