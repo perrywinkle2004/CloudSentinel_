@@ -1,4 +1,8 @@
 # ☁️ CloudSentinel — Cloud Security Posture & Misconfiguration Scanner
+> **Project by
+> [Caroline Spoorthi David Chelli](https://github.com/perrywinkle2004)
+> [Nikita V](https://github.com/Nikita-V222) 
+> [Vaishnavi S](https://github.com/Vaishnavigowda27)**
 
 > **Educational prototype · Fully local · No real cloud credentials required**
 
